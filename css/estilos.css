@@ -1,0 +1,29 @@
+.site-header{
+    padding: 20px 0;
+}
+.barra-menu{
+    background-color:#DB008D;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navegacion-principal a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+@media(min-width:768px){
+    .navegacion-principal a{
+        display: inline-block;
+    }
+}
+.navegacion-principal a:hover{
+    background-color: #00B8E4;
+}
