@@ -7,23 +7,53 @@ html {
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.contenedor{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.barra-menu{
-    background-color: #0d88AD;
-}
 img{
     max-width: 100%;
 }
-.navegacion-principal a{
+p{
+    font-size: 14px;
+    line-height: 2;
+}
+.boton{
+    background-color: #00b8e4;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 10px;
     color: #ffffff;
-    padding: 15px;
-    font-size: 20px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color .3s ease-in-out;
+
+}
+.boton:hover{
+    background-color: #0481a0;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.barra-menu{
+    background-color: #db008d;
+    margin-top: 40px;
+}
+.navegacion-principal a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px;
     display: block;
     text-align: center;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.navegacion-principal a:hover{
+    background-color: #00b8e4;
 }
 @media(min-width:768px){
     .navegacion-principal a{
@@ -31,13 +61,70 @@ img{
     }
 }
 .pagina-principal{
-    background-color: blue;
-    width: 800px;
-    float: left;
-    padding: 20px;
+    margin-top: 40px;
 }
+.pagina-principal,
 .sidebar{
-    background-color: red;
-    width: 400px;
-    float: right;
+    padding: 20px;
+    
+}
+@media(min-width:768px){
+    .pagina-principal{
+        width: 70%;
+        float: left;
+        padding:0 20px 0 0;
+    }
+    .sidebar{
+        width:30%;
+        float: right;
+        padding: 0;
+        margin-top: 40px;
+    }
+}
+
+
+/* Entradas de Blog **/
+h2{
+    color: #00b8e4;
+    margin-bottom: 20px;
+}
+.entrada{
+    margin-bottom: 60px;
+}
+.entrada:last-of-type{
+    margin-bottom: 0;
+}
+.entrada img{
+    display: block;
+}
+@media(min-width:480px){
+    .entrada img{
+        width: 300px;
+        float: left;
+        padding: 0 30px 0 0;
+    }
+}
+.entrada p{
+    text-align: justify;
+    
+}
+
+/** Sidebar **/
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li{
+    padding: 10px 10px 10px 0;
+}
+.sidebar ul li:hover{
+    background-color: #00b8e4;
+}
+.sidebar ul li a{
+    color:#00b8e4;
+    text-decoration: none;
+    font-size: 17px;
+}
+.sidebar ul li:hover a{
+    color: #ffffff;
 }
